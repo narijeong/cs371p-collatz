@@ -49,6 +49,16 @@ int collatz_eval (int i, int j);
  */
 int get_c(int i);
 
+// -------
+// find_maxC
+// -------
+
+/**
+ * @param min minimum in the range
+ * @param max maximum in the range
+ * @param current maximum value 
+ */
+int find_maxC (int min, int max, int max_length);
 
 // -------------
 // collatz_print
