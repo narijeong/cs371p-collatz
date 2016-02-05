@@ -43,8 +43,10 @@ int get_c(int i) {
 	while(i > 1) {
 	   if(i%2 == 0)
 	     i = i/2;
-	   else 
+	   else {
+		 //assert(i*3+1 > i); //check overflow
 		 i = i*3 + 1;
+	   }
 	   cycle_length++;
 	}
 	assert (cycle_length > 0);
@@ -59,16 +61,14 @@ int find_maxC (int min, int max, int max_length) {
 	assert (min > 0);
 	assert (max > 0);
 	int c_length;
-	if(max/2+1 > min) {
-		min = max/2+1;
-	}
+
 	for(int i = min; i <=max; ++i) {
 		c_length = get_c(i);
 		if(c_length > max_length) {
 			max_length = c_length;
 		}
 	}
-	assert (max_length > 0);
+	assert (max_length >= 0);
 	return max_length;
 }
 
@@ -88,7 +88,7 @@ int collatz_eval (int i, int j) {
 		max = i;
 	}
 	
-	int max_length = 0;
+	int max_length = 1;
 	if(max - min >= 999) {
 		int startIndex;
 		int endIndex;
@@ -102,7 +102,6 @@ int collatz_eval (int i, int j) {
 			startIndex = min/1000 + 1;
 		}
 			
-		
 		endIndex = max/1000; 
 		// find the max_length among the 1000 range max
 		for(int i = startIndex; i < endIndex; ++i) {
@@ -112,12 +111,17 @@ int collatz_eval (int i, int j) {
 		}
 		
 		// find the max length from the left 
-		if(minMod != 1) {
-			int minMax = (min/1000)*1000;
-			max_length = find_maxC(min, minMax, max_length);
+		if(minMod != 1) { 
+			if(minMod == 0) {  //when 1000, 2000, 3000
+				max_length = find_maxC(min, min, max_length);
+			}
+			else {
+				int minMax = (min/1000+1)*1000;
+				max_length = find_maxC(min, minMax, max_length);
+			}
 		}
 		// find the max length from the right 
-		if(maxMod != 0) {
+		if(maxMod != 0) { 
 			int maxMin = endIndex*1000 + 1;
 			max_length = find_maxC(maxMin, max, max_length);
 		}
@@ -126,7 +130,7 @@ int collatz_eval (int i, int j) {
 	
 	max_length = find_maxC(min, max, max_length);
 	
-	//assert (max_length > 0);
+	assert (max_length > 0);
 	return max_length;
 }
 

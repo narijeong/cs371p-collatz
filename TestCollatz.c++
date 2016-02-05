@@ -148,13 +148,13 @@ TEST(CollatzFixture, solve2) {
     collatz_solve(r, w);
     ASSERT_EQ("1 1000 179\n1001 2000 182\n2001 3000 217\n3001 4000 238\n", w.str());
 }
-/*
+
 TEST(CollatzFixture, solve3) {
-    istringstream r("1 10\n100 200\n201 210\n900 1000\n");
+    istringstream r("2811 2608\n5242 401\n9476 8566\n6477 92\n3606 6997\n7463 7526\n4959 123 \n5553 6918\n");
     ostringstream w;
     collatz_solve(r, w);
-    ASSERT_EQ("1 10 20\n100 200 125\n201 210 89\n900 1000 174\n", w.str());
-}*/
+    ASSERT_EQ("2811 2608 191\n5242 401 238\n9476 8566 260\n6477 92 262\n3606 6997 262\n7463 7526 208\n4959 123 238\n5553 6918 262\n", w.str());
+}
 /*
 % g++ -fprofile-arcs -ftest-coverage -pedantic -std=c++11 -Wall Collatz.c++ TestCollatz.c++ -o TestCollatz -lgtest -lgtest_main -lpthread
 

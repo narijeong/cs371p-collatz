@@ -49,9 +49,9 @@ int collatz_eval (int i, int j);
  */
 int get_c(int i);
 
-// -------
+// ---------
 // find_maxC
-// -------
+// ---------
 
 /**
  * @param min minimum in the range
