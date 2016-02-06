@@ -1,0 +1,83 @@
+commit e4d452f4277143e4d53d5c94a57f004bd3e1b778
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Fri Feb 5 21:05:28 2016 -0600
+
+    add files that needs to be added, fix makefile accordingly
+
+commit 461b1cc12bac8f31a8b346a65d99e4bad177ee80
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Fri Feb 5 20:15:16 2016 -0600
+
+    add #define and #ifdef for cache use. Fixes #18
+
+commit 213e0bf35b2a07f48382b5882ecbf3c608380ca0
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Fri Feb 5 17:01:53 2016 -0600
+
+    add more unit test, acceptance test and fix the solution
+
+commit dced8cbebbc89c7952a5b7c9ef57bec8dea3e8d5
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Fri Feb 5 03:51:22 2016 -0600
+
+    motify RunCollatz.out
+
+commit 64c69f4d93c30ea2dfccbf7a39718209b435551b
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Fri Feb 5 03:43:59 2016 -0600
+
+    add unit tests and solutions
+
+commit 87eeaffe7cd9eb6d1d939bf1bf4aaef487b6a4c6
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Thu Feb 4 18:55:05 2016 -0600
+
+    add simplest solution
+
+commit 39cba6d5f1828cc21c5197a4e48aa8f078fa2926
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Tue Jan 26 01:50:57 2016 -0600
+
+    delete html file to fix makefile issue when building on Travis CI
+
+commit 7bef5a7277ea7e4133a926c945dbd7d52cc9e074
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Tue Jan 26 01:45:27 2016 -0600
+
+    fix make check and add files
+
+commit 62c4c6cc824762fe12417585a4defd3d022d502d
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Tue Jan 26 01:30:29 2016 -0600
+
+    attemp to fix failing at Travis CI
+
+commit 4ef87dd600c7012429f2d1f5a38af4ae5dad1f6a
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Tue Jan 26 01:25:04 2016 -0600
+
+    fix makefile
+
+commit 3e17f72278bfabfecc494c826b6c1364c14af619
+Author: Nari Jeong <narijeong@utexas.edu>
+Date:   Tue Jan 26 01:15:15 2016 -0600
+
+    add missing files
+
+commit ddf161052a0d8aee5c194591af1a2da818ffe0cb
+Author: Nari Jeong <narijeong@icloud.com>
+Date:   Tue Jan 26 01:08:30 2016 -0600
+
+    add travis.yml
+
+commit 663fa7b7438607ffd48ffc3afb11d4fb60461ce8
+Author: Nari Jeong <narijeong@icloud.com>
+Date:   Tue Jan 26 01:00:04 2016 -0600
+
+    copy files from the class page and sucess in run
+
+commit 3d5a82d4ee9ff40a1720f8e42af4e6ad9a1bd49c
+Author: nari <narijeong@icloud.com>
+Date:   Sun Jan 24 04:57:30 2016 -0600
+
+    Initial commit
